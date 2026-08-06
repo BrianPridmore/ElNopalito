@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Nopalito | Authentic Mexican Restaurant Phoenix, AZ</title>
+    <meta name="description" content="Authentic Mexican flavors in Phoenix. Enjoy our Torta Cubana, Street Tacos, and fresh Horchata. Dine-in, takeout, and delivery available.">
+    
+    <!-- Fonts & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        nopal: '#2D5A27',     /* Cactus Green */
+                        terracotta: '#C05C33', /* Earthy Red/Orange */
+                        cream: '#FDFBF7',      /* Off-white */
+                        chili: '#9B1B1B',      /* Accent Red */
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Jost', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #FDFBF7; color: #333; font-family: 'Jost', sans-serif; }
+        .hero-overlay { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); }
+        .menu-card:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Sticky Header -->
+    <header class="fixed w-full z-50 bg-cream/95 backdrop-blur-md border-b border-terracotta/10 py-3 px-4 md:px-12 flex justify-between items-center shadow-sm">
+        <div class="flex items-center space-x-2">
+            <div class="text-terracotta text-2xl md:text-3xl font-serif font-bold tracking-tight">EL NOPALITO</div>
+        </div>
+        <div class="hidden md:flex items-center space-x-8 text-sm font-semibold uppercase tracking-wider">
+            <a href="#about" class="hover:text-terracotta transition">Our Story</a>
+            <a href="#menu" class="hover:text-terracotta transition">Menu</a>
+            <a href="tel:6025222043" class="text-nopal flex items-center">
+                <i class="fas fa-phone-alt mr-2"></i> (602) 522-2043
+            </a>
+            <a href="#order" class="bg-terracotta text-white px-6 py-2 rounded-full hover:bg-chili transition shadow-md">
+                Order Online
+            </a>
+        </div>
+        <!-- Mobile Phone Icon Only -->
+        <a href="tel:6025222043" class="md:hidden text-terracotta text-xl">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[90vh] flex items-center justify-center text-white pt-16">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 hero-overlay z-10"></div>
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover" alt="Authentic Mexican Tacos">
+        </div>
+        
+        <div class="relative z-20 text-center px-6">
+            <span class="uppercase tracking-[0.3em] text-sm mb-4 block font-semibold text-yellow-400">Family Owned & Operated</span>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 italic leading-tight">Authentic Mexican <br>Flavor in Phoenix</h1>
+            <p class="max-w-2xl mx-auto text-lg md:text-xl font-light mb-10 text-gray-100">
+                Homemade recipes, fresh ingredients, and the heart of Mexico served daily on 24th St.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#order" class="bg-nopal text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-opacity-90 transition transform hover:scale-105">
+                    Order Online
+                </a>
+                <a href="tel:6025222043" class="bg-white text-terracotta px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-gray-100 transition shadow-xl">
+                    Call To Order
+                </a>
+            </div>
+            <!-- Status Badge -->
+            <div class="mt-8 inline-flex items-center bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/30">
+                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-2"></span>
+                <span class="text-xs uppercase font-bold tracking-tighter">Open Now • Closes 9:00 PM</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="bg-nopal py-10 text-white">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 items-center text-center">
+            <div class="space-y-1">
+                <div class="flex justify-center text-yellow-400 mb-1">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text-sm font-bold">4.1 Stars (403 Reviews)</p>
+            </div>
+            <div class="border-l border-white/10 hidden lg:block">
+                <p class="text-2xl font-serif">$10–20</p>
+                <p class="text-[10px] uppercase tracking-widest opacity-70">Price Per Person</p>
+            </div>
+            <div class="border-l border-white/10">
+                <i class="fas fa-bicycle text-2xl mb-2"></i>
+                <p class="text-xs uppercase font-bold tracking-widest">No-Contact Delivery</p>
+            </div>
+            <div class="border-l border-white/10">
+                <i class="fas fa-utensils text-2xl mb-2"></i>
+                <p class="text-xs uppercase font-bold tracking-widest">Dine-In & Takeout</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&q=80&w=600" class="rounded-2xl shadow-lg mt-8" alt="Tacos">
+                <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&q=80&w=600" class="rounded-2xl shadow-lg" alt="Horchata">
+            </div>
+            <div>
+                <h2 class="font-serif text-4xl md:text-5xl text-terracotta mb-6">Our Kitchen, <br><span class="italic text-nopal">Your Table.</span></h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    At El Nopalito, we believe in the power of a homemade meal. Our kitchen is run with the same love and tradition we grew up with—from our fresh-pressed tortillas to our signature horchata made from scratch every morning.
+                </p>
+                <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                    Since opening our doors in Phoenix, we've remained a compact, no-frills joint focused on one thing: bold, authentic flavor that keeps you coming back.
+                </p>
+                <a href="#menu" class="text-terracotta font-bold border-b-2 border-terracotta pb-1 hover:text-nopal hover:border-nopal transition">View Our Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Highlights -->
+    <section id="menu" class="py-24 bg-terracotta/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl mb-4">Popular Favorites</h2>
+                <div class="h-1 w-20 bg-terracotta mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 menu-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1613514785940-daed07799d85?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover transition-transform duration-500" alt="Torta Cubana">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl">Torta Cubana</h3>
+                            <span class="text-nopal font-bold">$13.95</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">A massive classic: Breaded steak, ham, egg, and chorizo with fresh avocado.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 menu-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover transition-transform duration-500" alt="Asada Fries">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl">Asada Fries</h3>
+                            <span class="text-nopal font-bold">$12.50</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Crispy fries loaded with carne asada, melted cheese, crema, and guacamole.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 menu-card">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover transition-transform duration-500" alt="Street Tacos">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 class="font-bold text-xl">Street Tacos</h3>
+                            <span class="text-nopal font-bold">$3.50 ea</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">Your choice of protein on double corn tortillas with cilantro and onion.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="bg-terracotta text-white px-8 py-3 rounded-full font-bold hover:bg-chili transition">Download Full Menu (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl text-center mb-12 italic">"The best street tacos in Phoenix, hands down. The carne asada is perfectly seasoned."</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-terracotta/10 shadow-sm">
+                    <p class="text-gray-600 italic mb-4">"The Torta Cubana is huge and authentic. You can tell they use family recipes. Also, the restaurant is always spotless!"</p>
+                    <p class="font-bold text-nopal">— Maria G.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl border border-terracotta/10 shadow-sm">
+                    <p class="text-gray-600 italic mb-4">"Fresh horchata that actually tastes like rice and cinnamon, not a powder mix. Fast service for takeout."</p>
+                    <p class="font-bold text-nopal">— David S.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact -->
+    <section id="order" class="py-24 px-6 bg-cream border-t border-terracotta/10">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
+            <div>
+                <h2 class="font-serif text-4xl mb-8 text-terracotta">Find Us</h2>
+                <div class="space-y-6 text-lg mb-8">
+                    <p class="flex items-start">
+                        <i class="fas fa-map-marker-alt text-nopal mt-1.5 mr-4"></i>
+                        2831 N 24th St, Phoenix, AZ 85008
+                    </p>
+                    <p class="flex items-center">
+                        <i class="fas fa-clock text-nopal mr-4"></i>
+                        9:00 AM – 9:00 PM Daily
+                    </p>
+                    <a href="tel:6025222043" class="flex items-center text-terracotta font-bold hover:underline">
+                        <i class="fas fa-phone mr-4"></i>
+                        (602) 522-2043
+                    </a>
+                </div>
+                <div class="rounded-3xl overflow-hidden h-72 shadow-lg">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.3184654316975!2d-112.03154812430732!3d33.483161373377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0df8a2f2679d%3A0x6009859f1366531!2s2831%20N%2024th%20St%2C%20Phoenix%2C%20AZ%2085008!5e0!3m2!1sen!2sus!4v1700000000000" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-terracotta/5">
+                <h3 class="font-serif text-3xl mb-6">Inquiries & Catering</h3>
+                <form class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-4 rounded-xl bg-gray-50 border-none focus:ring-2 focus:ring-nopal outline-none">
+                        <input type="tel" placeholder="Phone Number" class="w-full p-4 rounded-xl bg-gray-50 border-none focus:ring-2 focus:ring-nopal outline-none">
+                    </div>
+                    <select class="w-full p-4 rounded-xl bg-gray-50 border-none focus:ring-2 focus:ring-nopal outline-none">
+                        <option>Order Type: Takeout</option>
+                        <option>Order Type: Catering Inquiry</option>
+                        <option>Table Reservation</option>
+                    </select>
+                    <textarea placeholder="Your Message or Special Request" rows="4" class="w-full p-4 rounded-xl bg-gray-50 border-none focus:ring-2 focus:ring-nopal outline-none"></textarea>
+                    <button class="w-full bg-nopal text-white font-bold py-4 rounded-xl hover:bg-terracotta transition shadow-lg uppercase tracking-widest">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 flex border-t border-gray-100 bg-white shadow-[0_-5px_15px_rgba(0,0,0,0.05)]">
+        <a href="tel:6025222043" class="w-1/2 text-nopal font-bold py-4 flex items-center justify-center border-r border-gray-100">
+            <i class="fas fa-phone-alt mr-2"></i> CALL
+        </a>
+        <a href="#order" class="w-1/2 bg-terracotta text-white font-bold py-4 flex items-center justify-center">
+            ORDER ONLINE
+        </a>
+    </div>
+
+    <footer class="bg-nopal text-white/60 py-12 text-center pb-24 lg:pb-12">
+        <p class="text-white font-serif text-xl mb-2 italic">El Nopalito</p>
+        <p class="text-xs uppercase tracking-[0.4em]">24th St • Phoenix, Arizona</p>
+        <p class="mt-6 text-[10px] opacity-50 italic">Not a corporate chain. Just real food.</p>
+    </footer>
+
+</body>
+</html>
